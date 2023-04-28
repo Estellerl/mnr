@@ -4,7 +4,7 @@
   "description": "Video Course (recorded August 2022): **[samer.dev/mnr](https://samer.dev/mnr)**",
   "main": "index.js",
   "scripts": {
-    "dev:server":"tsnd src/server/server.ts"
+    "dev:server": "tsnd src/server/server.ts"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jscomplete/mnr#readme",
   "dependencies": {
+    "ejs": "^3.1.9",
     "express": "^4.18.2",
     "typescript": "^5.0.4"
   },
