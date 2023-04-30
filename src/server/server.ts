@@ -1,4 +1,8 @@
 import express from "express" ;
+import os from "os";
+import config from "./config"
+
+//console.log({PORT})
 
 
 const server = express();
@@ -15,7 +19,7 @@ server.use("/",(req, res) => {
 });
 
 // takes three arguments: 1.The port that it will be listing to 2.Machine host (IP of the machine) 3. function that will be exicuted when the server is done mounting itself off that port 
-server.listen(8080, "0.0.0.0" , () => { console.info(
-    "Express server is listening at http://0.0.0.0:8080"
+server.listen(/*config.PORT*/ 8080, config.HOST, () => { console.info(
+    `Express server is listening at ${config.SERVER_URL}`
 );
 })
