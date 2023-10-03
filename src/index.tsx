@@ -1,7 +1,19 @@
 import {createRoot} from "react-dom/client"
+import App from "./components/app"
+
+
+
+
 const App = () => {
-    return <div> Hello</div>;
+    return (
+    <div className="container"> 
+    <Header message="Naming Contests"/> 
+
     
+    
+    </div>;
+
+    );    
 };
 // entry point for react 
 const container = document.getElementById("app")
